@@ -36,7 +36,7 @@ export class CadastroEnderecoComponent {
     private enderecoService: CepService
   ) {
     this.enderecoForm = this.formBuilder.group({
-      cep: ['', Validators.required],
+      cep: ['', Validators.compose([Validators.required, Validators.minLength(8)])],
       logradouro: ['', Validators.required],
       complemento: ['', Validators.required],
       bairro: ['', Validators.required],

@@ -4,6 +4,7 @@
     <mat-label>CEP</mat-label>
     <input matInput formControlName="cep" mask="00000-000">
     <mat-error *ngIf="enderecoForm.get('cep')?.hasError('required')">Campo obrigatório!</mat-error>
+    <mat-error *ngIf="enderecoForm.get('cep')?.hasError('minlength')">O cep deve ter no mínimo 8 caracteres.</mat-error>
   </mat-form-field>
   
   <mat-form-field class="grid-item">
