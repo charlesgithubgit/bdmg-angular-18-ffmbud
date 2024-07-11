@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { HelloComponent } from './hello.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CommonModule } from '@angular/common';
+import { CadastroEnderecoComponent } from '../teste-tecnico/cadastro-endereco/cadastro-endereco.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, HelloComponent, MatExpansionModule],
+  imports: [CommonModule, HelloComponent, MatExpansionModule, CadastroEnderecoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

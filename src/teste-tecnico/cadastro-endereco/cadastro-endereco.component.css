@@ -1,0 +1,14 @@
+.grid-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  
+  .grid-item {
+    grid-column: span 2;
+  }
+  
+  .grid-item:last-child {
+    grid-column: span 4;
+  }
+  
